@@ -51,7 +51,8 @@ export default class MyWorker extends WorkerEntrypoint<Env> {
         user_id: user.id,
         expires_in_seconds: 600,
         actor: {
-          sub: 'foo',
+          // TODO: Make this configurable
+          sub: 'My Cloudflare MCP Server',
         },
       }),
     });
